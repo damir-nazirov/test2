@@ -1,0 +1,169 @@
+
+.services {
+  padding: 24px 22px 21px 32px;
+  background: linear-gradient(270deg, #F8F8F8 16.84%, rgba(248, 248, 248, 0.0001) 100%);
+
+}
+.services-header {
+    display: flex;
+    justify-content: space-between;
+    height: 40px;
+        &__title {
+            overflow: hidden;
+            font-size: 28px;
+            letter-spacing: -0.6px;
+            color: #1B1C21;
+            position: relative;
+            &:before {
+                content: '';
+                display: block;
+                width: 6px;
+                height: 40px;
+                background:#41F6D7;
+                position: absolute;
+                left: -34px;
+                border-radius: 20px;
+            }
+        }
+        &__buttons {
+            width: 240px;
+            display: flex;
+            justify-content: space-between;
+                &_request {
+                    background-image: url(../img/icons/services/request.svg);
+                //     &:before {
+                //         content: 'Оставить заявку';
+                //         // display: flex;
+                //         // width: 150px;
+                //         font-size: 16px;
+                //         letter-spacing: -0.2px;
+                //         color: #1B1C21;
+                //         transform: translateX(-90px);
+                //         white-space: nowrap;
+                }
+                &_text {
+                  font-size: 16px;
+                          letter-spacing: -0.2px;
+                          color: #1B1C21;
+                          transform: translateX(-90px);
+                          white-space: nowrap;
+                  
+                }
+                &_repair-status {
+                    background-image: url(../img/icons/services/repair-status.svg);
+                //     &:before {
+                //         content: 'Статус ремонта';
+                //         // display: flex;
+                //         // width: 150px;
+                //         font-size: 16px;
+                //         letter-spacing: -0.2px;
+                //         color: #1B1C21;
+                //         transform: translateX(-90px);
+                //         white-space: nowrap;
+                // }
+                }
+
+        }
+}
+
+.services-subheader {
+    padding-top: 7px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    &__item {
+        margin-top: 3px;
+        padding: 8px 20px 8px 20px;
+        font-size: 16px;
+        line-height: 24px;
+        letter-spacing: -0.2px;
+        border: none;
+        background-color: inherit;
+        border: 2px solid #F8F8F8;
+        cursor: pointer;
+        &:hover {
+            border: 2px solid #B8FFEC;
+            border-radius: 6px;
+        }
+
+color: #7E7E82;
+        &_active {
+            background: #FFFFFF;
+            border: 2px solid #B8FFEC;
+            border-radius: 6px;
+        }
+        }
+}
+
+@media (max-width: 768px) and (min-width: 0px) {
+    .main-nav {
+      display: none;
+    }
+    .services {
+        padding-left: 16px;
+    }
+    .services-header__buttons {
+        display: none;
+    }
+    .services-subheader {
+        display: block;
+        height: 60px;
+        width: 2000px;
+        // justify-content: space-between;
+        flex-wrap: nowrap;
+
+    }
+  }
+  
+  
+  @media (min-width: 768px) and (max-width: 1439px) {
+    .main-content {
+       padding-left: 24px;
+    }
+    .main-nav {
+        display: none;
+      }
+    .services-header__buttons {
+        display: none;
+    }  
+    .services {
+        min-width: 768px;
+        max-width: 1439px;
+    }
+    .services-subheader {
+        display: block;
+        height: 60px;
+        width: 2000px;
+        // justify-content: space-between;
+        flex-wrap: nowrap;
+
+    }
+  }
+
+
+
+
+// @media (min-width: 769px) and (max-width: 1439px) {
+//     .services {
+//         width: 1120px;
+//     }
+//     .services-subheader {
+//         display: block;
+//         height: 60px;
+//         width: 2000px;
+//         // justify-content: space-between;
+//         flex-wrap: nowrap;
+
+//     }
+//   }
+  
+  @media (min-width: 1440px) {
+    .main-content {
+      width: calc(100% - 306px);
+    }
+  }
+  
+
+
+
+// при наведении на табы они увеличиваются за счет добавления бордера
