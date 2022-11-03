@@ -203,26 +203,22 @@ body {
   justify-content: space-between;
   width: 700px;
 }
-
-.in-box {
-  flex-basis: 120px;
-}
 .one {
-  // width: 100px;
+  width: 100px;
   height: 100px;
   background: red;
   flex-shrink: 1;
 }
 .two {
-  // width: 100px;
+  width: 100px;
   height: 100px;
   background: green;
-  flex-shrink: 2;
+  flex-grow: 2;
 }
 .three {
-  // width: 100px;
+  width: 100px;
   height: 100px;
   background: blue;
-  flex-shrink: 0.5;
+  flex-grow: 3;
 }
 
