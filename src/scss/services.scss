@@ -31,15 +31,6 @@
             justify-content: space-between;
                 &_request {
                     background-image: url(../img/icons/services/request.svg);
-                //     &:before {
-                //         content: 'Оставить заявку';
-                //         // display: flex;
-                //         // width: 150px;
-                //         font-size: 16px;
-                //         letter-spacing: -0.2px;
-                //         color: #1B1C21;
-                //         transform: translateX(-90px);
-                //         white-space: nowrap;
                 }
                 &_text {
                   font-size: 16px;
@@ -51,27 +42,20 @@
                 }
                 &_repair-status {
                     background-image: url(../img/icons/services/repair-status.svg);
-                //     &:before {
-                //         content: 'Статус ремонта';
-                //         // display: flex;
-                //         // width: 150px;
-                //         font-size: 16px;
-                //         letter-spacing: -0.2px;
-                //         color: #1B1C21;
-                //         transform: translateX(-90px);
-                //         white-space: nowrap;
-                // }
                 }
 
         }
 }
 
 .services-subheader {
+    margin: 0;
+    padding-left: 0;
     padding-top: 7px;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
     &__item {
+        display: inline-block;
         margin-top: 3px;
         padding: 8px 20px 8px 20px;
         font-size: 16px;
@@ -96,10 +80,7 @@ color: #7E7E82;
         }
 }
 
-@media (max-width: 768px) and (min-width: 0px) {
-    .main-nav {
-      display: none;
-    }
+@media (max-width: 768px) {
     .services {
         padding-left: 16px;
     }
@@ -110,20 +91,13 @@ color: #7E7E82;
         display: block;
         height: 60px;
         width: 2000px;
-        // justify-content: space-between;
         flex-wrap: nowrap;
 
     }
   }
   
   
-  @media (min-width: 768px) and (max-width: 1439px) {
-    .main-content {
-       padding-left: 24px;
-    }
-    .main-nav {
-        display: none;
-      }
+  @media (min-width: 768px) and (max-width: 1439.99px) {
     .services-header__buttons {
         display: none;
     }  
@@ -135,36 +109,8 @@ color: #7E7E82;
         display: block;
         height: 60px;
         width: 2000px;
-        // justify-content: space-between;
         flex-wrap: nowrap;
 
     }
   }
 
-
-
-
-// @media (min-width: 769px) and (max-width: 1439px) {
-//     .services {
-//         width: 1120px;
-//     }
-//     .services-subheader {
-//         display: block;
-//         height: 60px;
-//         width: 2000px;
-//         // justify-content: space-between;
-//         flex-wrap: nowrap;
-
-//     }
-//   }
-  
-  @media (min-width: 1440px) {
-    .main-content {
-      width: calc(100% - 306px);
-    }
-  }
-  
-
-
-
-// при наведении на табы они увеличиваются за счет добавления бордера

@@ -7,6 +7,7 @@
     justify-content: space-between;
     height: 88px;
     padding: 0 24px 0 24px;
+    background-color: #FFFFFF;
     &__content-wrapper {
         box-sizing: border-box;
         width: 203px;
@@ -28,22 +29,10 @@
     }
 }
 
-@media (max-width: 768px) and (min-width: 0px) {
-    .header-nav {
-      
-    }
-    // .services {
-    //     width: 320px;
-    // }
-  }
-
   @media (min-width: 1440px) {
     .header-nav {
       display: none;
     }
-    // .services {
-    //     width: 320px;
-    // }
   }
 
   @media (min-width: 0px) and (max-width: 768px)   {
