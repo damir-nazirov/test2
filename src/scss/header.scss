@@ -1,6 +1,6 @@
 
 
-.header-nav {
+.header {
     position: relative;
     display: flex;
     flex-direction: row;
@@ -22,35 +22,45 @@
         }
     }
     &__separator {
+        display: block;
         width: 2px;
         height: 32px;
         background-color: #EAEAEA;
         border-radius: 1px;
     }
+    &__buttons {
+      &_request {
+        background-image: url(../img/icons/services/request.svg);
+      }
+      &_repair-status {
+        background-image: url(../img/icons/services/repair-status.svg);
+    }
+    }
 }
 
   @media (min-width: 1440px) {
-    .header-nav {
+    .header {
       display: none;
     }
   }
 
   @media (min-width: 0px) and (max-width: 768px)   {
-    .header-nav {
+    .header {
       padding: 0 16px;
+      
     }
-    .header-nav__content-wrapper.header-nav__content-wrapper_size_xl .invisible {
+    .header__content-wrapper_size_xl .button_contact {
       display: none;
     }
-    .header-nav__content-wrapper.header-nav__content-wrapper_size_xl {
+    .header__content-wrapper.header__content-wrapper_size_xl {
         min-width: 118px;
         width: 118px;
         margin: 0;
     }
-    .header-nav__content-wrapper .header-nav__separator.invisible {
+    .header__content-wrapper .header__separator_left {
         display: none;
     }
-    .header-nav__content-wrapper {
+    .header__content-wrapper {
         width: 154px;
         min-width: 154px;
         margin-right: 17px;

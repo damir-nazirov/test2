@@ -9,15 +9,15 @@ $menuText: #1B1C21;
   font-style: italic;
 }
 
-
-
 .main-nav {
-  height: 420px;
   padding: 30px 31px 32px 22px;
   overflow: hidden;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  box-shadow: 16px 0 52px rgba(14, 24, 80, 0.2);
+  z-index: 10;
+
 
   &__contacts {
     height: 120px;
@@ -45,7 +45,7 @@ $menuText: #1B1C21;
       &_column {
         flex-direction: column;
         align-items: start;
-        height: 188px;
+        height: 180px;
         justify-content: space-between;
       }
     }
@@ -88,23 +88,52 @@ $menuText: #1B1C21;
   }
 }
 
-@media (max-width: 767px) and (min-width: 0px) {
+@media (max-width: 767.99px) {
+
+  //телефоны
   .main-nav {
     display: none;
+    min-width: 360px;
+    min-width: 360px;
+
+    &__content-wrapper_flex_column {
+      height: 153px;
+    }
   }
 }
 
 @media (min-width: 768px) and (max-width: 1439.99px) {
+
+  //таблетки
   .main-nav {
     display: none;
+    min-width: 320px;
+    max-width: 320px;
+
+    &__wrapper {
+      height: 969px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
   }
 }
 
 @media (min-width: 1440px) {
   .main-nav {
+    box-shadow: none;
+    z-index: 10;
+    display: flex;
     width: 306px;
-    height: 920px;
-    padding: 16.78px 31px 32px 22px;
+    height: 945px;
+    padding: 29px 31px 32px 22px;
+
+    &__wrapper {
+      height: 964px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
 
     .button_close {
       display: none;
@@ -192,3 +221,6 @@ $menuText: #1B1C21;
   font-size: 24px;
 }
 
+.visible-nav {
+  display: flex;
+}
