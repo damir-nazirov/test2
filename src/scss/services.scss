@@ -52,7 +52,6 @@
     padding-top: 7px;
     display: flex;
     justify-content: space-between;
-    flex-wrap: wrap;
     &__item {
         display: inline-block;
         margin-top: 3px;
@@ -115,9 +114,14 @@ color: #7E7E82;
     .services-subheader {
         display: block;
         height: 60px;
-        width: 2000px;
+        width: 100%;
+        overflow-x: scroll;
         flex-wrap: nowrap;
-
+        white-space: nowrap;
+        height: 100%;
+        &::-webkit-scrollbar {
+            width: 0;
+        }
     }
   }
 
