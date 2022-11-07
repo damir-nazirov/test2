@@ -94,11 +94,16 @@ color: #7E7E82;
         }
     }
     .services-subheader {
-        display: block;
+                display: block;
         height: 60px;
-        width: 2000px;
+        width: 101%;
+        overflow-x: scroll;
         flex-wrap: nowrap;
-
+        white-space: nowrap;
+        height: 100%;
+        &::-webkit-scrollbar {
+            width: 0;
+        }
     }
   }
 
@@ -114,7 +119,7 @@ color: #7E7E82;
     .services-subheader {
         display: block;
         height: 60px;
-        width: 100%;
+        width: 101%;
         overflow-x: scroll;
         flex-wrap: nowrap;
         white-space: nowrap;
