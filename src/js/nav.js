@@ -4,11 +4,11 @@ const main_nav = document.querySelector('.main-nav');
 const main_content = document.querySelector('.main-content');
 // const header = document.querySelector('.header');
 
-const addClass = (element, className) => {
+export const addClass = (element, className) => {
   element.classList.add(className)
 }
 
-const removeClass = (element, className) => {
+export const removeClass = (element, className) => {
   element.classList.remove(className)
 }
 
