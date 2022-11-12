@@ -92,7 +92,8 @@ $menuText: #1B1C21;
 
   //телефоны
   .main-nav {
-    display: none;
+    // display: none;
+    display: flex;
     min-width: 360px;
     min-width: 360px;
 
@@ -106,7 +107,8 @@ $menuText: #1B1C21;
 
   //таблетки
   .main-nav {
-    display: none;
+    // display: none;
+    display: flex;
     min-width: 320px;
     max-width: 320px;
 
@@ -123,7 +125,7 @@ $menuText: #1B1C21;
   .main-nav {
     box-shadow: none;
     z-index: 10;
-    display: flex;
+    display: flex !important;
     width: 306px;
     height: 945px;
     padding: 29px 31px 32px 22px;

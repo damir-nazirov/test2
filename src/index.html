@@ -12,7 +12,7 @@
 <body>
   <div class="page">
 
-    <nav class="main-nav" aria-label="Main">
+    <nav class="main-nav hide" aria-label="Main">
       <div class="main-nav__wrapper">
         <div>
           <div class="main-nav__content-wrapper">
@@ -28,7 +28,7 @@
             <button class="button button_search">
             </button>
           </div>
-  
+
           <div class="main-nav__list-wrap">
             <ul class="main-nav__list">
               <li class="main-nav__item">
@@ -55,7 +55,7 @@
             </ul>
           </div>
         </div>
-  
+
         <div class="main-nav__content-wrapper main-nav__content-wrapper_flex_column">
           <div class="main-nav__contacts">
             <div class="contact-buttons main-nav__content-wrapper main-nav__content-wrapper_size_m">
@@ -66,7 +66,7 @@
               <button class="button button_man">
               </button>
             </div>
-  
+
             <div>
               <a class="email" href="mailto: mail@cps.com">mail@cps.com</a>
             </div>
@@ -74,15 +74,15 @@
               <a class="phone" href="tel:8 800 890 8900">8 800 890 8900</a>
             </div>
           </div>
-  
-  
+
+
           <div class="languages main-nav__content-wrapper">
             <a href="#" class="language language_active">ru</a>
             <a href="#" class="language">en</a>
             <a href="#" class="language">ch</a>
           </div>
         </div>
-  
+
       </div>
 
 
@@ -92,26 +92,26 @@
     <div class="main-content">
       <header class="header">
         <!-- <nav class="header-nav"> -->
-          <div class="header__content-wrapper">
-            <button class="button button_burger"></button>
-            <div class="header__separator header__separator_left"></div>
-            <div class="logo">
-              <a class="logo__link">
-                <img src="./img/icons/menu/logo.svg" alt="logo">
-              </a>
-            </div>
+        <div class="header__content-wrapper">
+          <button class="button button_burger"></button>
+          <div class="header__separator header__separator_left"></div>
+          <div class="logo">
+            <a class="logo__link">
+              <img src="./img/icons/menu/logo.svg" alt="logo">
+            </a>
           </div>
+        </div>
 
-          <div class="header__content-wrapper header__content-wrapper_size_xl">
-              <button class="button button_contact button_phone"></button>
-              <button class="button button_contact button_chat"></button>
-              <button class="button button_contact button_man"></button>
-            <div class="header__separator header__separator_right">
+        <div class="header__content-wrapper header__content-wrapper_size_xl">
+          <button class="button button_contact button_phone"></button>
+          <button class="button button_contact button_chat"></button>
+          <button class="button button_contact button_man"></button>
+          <div class="header__separator header__separator_right">
 
-            </div>
-            <div class="button header__buttons_request"></div>
-            <div class="button header__buttons_repair-status"></div>
           </div>
+          <div class="button header__buttons_request"></div>
+          <div class="button header__buttons_repair-status"></div>
+        </div>
 
         <!-- </nav> -->
       </header>
@@ -144,32 +144,43 @@
 
         <div class="services__description">
           <div class="services__description-text">
-            Мы являемся авторизованным сервисным центром по ремонту техники Dell. Только у нас вы можете отремонтировать свой ноутбук Dell с официальной гарантией производителя.
+            Мы являемся авторизованным сервисным центром по ремонту техники Dell. Только у нас вы можете отремонтировать
+            свой ноутбук Dell с официальной гарантией производителя.
             <br>
             <br>
-            Мы успешно работаем с 1992 года и заслужили репутацию надежного партнера, что подтверждает большое количество постоянных клиентов. Мы гордимся тем, что к нам обращаются по рекомендациям и, в свою очередь, советуют нас родным и близким.
-            
-            <span class="services__description-text_hidden">
-              <br>
-              Под нашим управлением более 200 сервисных центров по всей России и в странах СНГ. Региональная сеть активно расширяется. Мы сами занимаемся импортом и экспортом запасных частей, осуществляем логистику.
-              <br>
-              <br>
-              Все ключевые этапы обслуживания и ремонта техники под прямым и строгим контролем, благодаря программному обеспечению нашей разработки. Компания соответствует требованиям ISO 9001.
-              <br>
-              <br>
-              CPS работает с торговыми сетями, корпоративными клиентами, государственными организациями и частными лицами. Технологии и персональные данные, которые попадают в наше распоряжение, охраняются в соответствии со всеми современными требованиями информационной безопасности.
-            </span>
+            Мы успешно работаем с 1992 года и заслужили репутацию надежного партнера, что подтверждает большое
+            количество постоянных клиентов. Мы гордимся тем, что к нам обращаются по рекомендациям и, в свою очередь,
+            советуют нас родным и близким.
+
 
             <button class="show-hide-button show-hide-button_show">Читать далее</button>
-            <button class="show-hide-button show-hide-button_hide">Скрыть</button>
+            <!-- <button class="show-hide-button show-hide-button_hide">Скрыть</button> -->
 
+
+            <span class="services__description-text_hide hide">
+              <br>
+              Под нашим управлением более 200 сервисных центров по всей России и в странах СНГ. Региональная сеть
+              активно расширяется. Мы сами занимаемся импортом и экспортом запасных частей, осуществляем логистику.
+              <br>
+              <br>
+              Все ключевые этапы обслуживания и ремонта техники под прямым и строгим контролем, благодаря программному
+              обеспечению нашей разработки. Компания соответствует требованиям ISO 9001.
+              <br>
+              <br>
+              CPS работает с торговыми сетями, корпоративными клиентами, государственными организациями и частными
+              лицами. Технологии и персональные данные, которые попадают в наше распоряжение, охраняются в соответствии
+              со всеми современными требованиями информационной безопасности.
+            </span>
+            <button class="show-hide-button show-hide-button_hide hide">Скрыть</button>
           </div>
-          <div class="services__description-image"></div>
+
+          <!-- <div class="services__description-image"></div> -->
+          <img class="services__description-image" src="./img/services/description-image.png" alt="cps">
         </div>
 
         <div class="services__brands">
           <div class="services__title">
-              ремонт техники различных брендов
+            ремонт техники различных брендов
           </div>
           <div class="services__brands-logo">
             <div class="services__brands-logo-wrapper">
@@ -179,7 +190,8 @@
                 <!-- <img src="./img/services/go.svg" alt=""> -->
               </a>
               <a href="#" class="services__brands-logo-link">
-                <img class="services__brands-logo-link-image" src="https://api.cpstc.ru/storage/1657293900-0-nw-samsung-logo.png" alt="samsung">
+                <img class="services__brands-logo-link-image"
+                  src="https://api.cpstc.ru/storage/1657293900-0-nw-samsung-logo.png" alt="samsung">
                 <button class="services__brands-logo-link-button"></button>
               </a>
               <a href="#" class="services__brands-logo-link">
@@ -187,11 +199,12 @@
                 <button class="services__brands-logo-link-button"></button>
               </a>
               <a href="#" class="services__brands-logo-link">
-                <img class="services__brands-logo-link-image" src="https://api.cpstc.ru/storage/asus-logo.png" alt="asus">
+                <img class="services__brands-logo-link-image" src="https://api.cpstc.ru/storage/asus-logo.png"
+                  alt="asus">
                 <button class="services__brands-logo-link-button"></button>
 
               </a>
-  
+
               <a href="#" class="services__brands-logo-link">
                 <img class="services__brands-logo-link-image" src="./img/services/firm-logo/5bosch.svg" alt="bosch">
                 <button class="services__brands-logo-link-button"></button>
@@ -209,30 +222,34 @@
                 <button class="services__brands-logo-link-button"></button>
               </a>
 
-              <div class="services__brands-logo-wrapper services__brands-logo-wrapper_hidden">
+              <div class="services__brands-logo-wrapper services__brands-logo-wrapper_hidden hide">
                 <a href="#" class="services__brands-logo-link">
-                  <img class="services__brands-logo-link-image" src="https://api.cpstc.ru/storage/1657294363-0-nw-epson-logo.png" alt="epson">
+                  <img class="services__brands-logo-link-image"
+                    src="https://api.cpstc.ru/storage/1657294363-0-nw-epson-logo.png" alt="epson">
                   <button class="services__brands-logo-link-button"></button>
                 </a>
                 <a href="#" class="services__brands-logo-link">
-                  <img class="services__brands-logo-link-image" src="https://api.cpstc.ru/storage/1657294646-0-nw-canon-logo.png"" alt="canon">
+                  <img class="services__brands-logo-link-image"
+                    src="https://api.cpstc.ru/storage/1657294646-0-nw-canon-logo.png"" alt=" canon">
                   <button class="services__brands-logo-link-button"></button>
                 </a>
                 <a href="#" class="services__brands-logo-link">
-                  <img class="services__brands-logo-link-image" src="https://api.cpstc.ru/storage/1657293962-0-nw-lg-logo.png" alt="lg">
+                  <img class="services__brands-logo-link-image"
+                    src="https://api.cpstc.ru/storage/1657293962-0-nw-lg-logo.png" alt="lg">
                   <button class="services__brands-logo-link-button"></button>
                 </a>
                 <a href="#" class="services__brands-logo-link">
-                  <img class="services__brands-logo-link-image" src="https://api.cpstc.ru/storage/1657294144-0-nw-iru-logo.png" alt="iru">
+                  <img class="services__brands-logo-link-image"
+                    src="https://api.cpstc.ru/storage/1657294144-0-nw-iru-logo.png" alt="iru">
                   <button class="services__brands-logo-link-button"></button>
                 </a>
-  
-              </div>
-              <button class="show-hide-button show-hide-button_show">Показать всё</button>
-              <button class="show-hide-button show-hide-button_hide">Скрыть</button>
 
-  
+              </div>
             </div>
+
+            <button class="show-hide-button show-hide-button_show">Показать всё</button>
+            <button class="show-hide-button show-hide-button_hide hide">Скрыть</button>
+
           </div>
 
         </div>
