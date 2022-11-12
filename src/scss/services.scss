@@ -46,10 +46,6 @@
         justify-content: flex-start;
         flex-wrap: wrap;
         padding-top: 24px;
-        &_hidden {
-            padding-top: 0;
-            // display: none;
-        }
     }
     &__brands-logo-link {
         display: flex;
@@ -203,6 +199,21 @@ color: #7E7E82;
         }
     }
   }
+
+  .slick-dots {
+    li button {
+        &::before {
+            font-size: 17px;
+            color: #DDDDDD;
+            opacity: 1;
+        }
+    }
+  }
+
+  .slick-dots li.slick-active button:before {
+    color: #B5B6BC;
+    opacity: 1;
+}
 
   @media (min-width: 768px) and (max-width: 1439.99px) {
     .services-header__buttons {

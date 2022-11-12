@@ -1,13 +1,9 @@
-// import { addClass } from "./nav";
-// import { removeClass } from "./nav";
 import { toggleClass } from "./nav";
 
-const servicesDescriptionTextHidden = document.querySelector('.services__description-text_hide');
+const servicesDescriptionTextHidden = document.querySelector('.services__description .hide');
 
 const readMoreDescr = document.querySelector('.services__description-text .show-hide-button_show');
 const hideMoreDescr = document.querySelector('.services__description-text .show-hide-button_hide');
-
-
 
 
 const showHideMoreDescrText = () => {
@@ -22,18 +18,14 @@ const showHideMoreDescrText = () => {
 
 ///////////////////////////////////////////////////////////////////////
 
-
-const servicesBrendsHidden = document.querySelector('.services__brands-logo-wrapper .hide');
-
+const hideBrends = document.querySelectorAll('.services__brands-logo-wrapper .hide')
 const showMoreBrends = document.querySelector('.services__brands-logo .show-hide-button_show');
 const hideMoreBrends = document.querySelector('.services__brands-logo .show-hide-button_hide');
 
-
 const showHideMoreBrends = () => {
-  toggleClass(servicesBrendsHidden, 'hide');
+  hideBrends.forEach(element => toggleClass(element, 'hide'));
   toggleClass(showMoreBrends, 'hide');
   toggleClass(hideMoreBrends, 'hide');
-
 }
 
 showMoreBrends.addEventListener('click', showHideMoreBrends)
