@@ -3,34 +3,39 @@ $(document).ready(function(){
 
         // normal options...
         infinite: false,
+        slidesToShow: 1.11,
+        dots: true,
+
       
         // the magic
-        responsive: [{
+        responsive: [
+          // {
       
-            breakpoint: 768,
-            settings: {
-              slidesToShow: 1.11,
-              dots: true,
-              infinite: false
-            }
+            // breakpoint: 768,
+            // settings: {
+            //   slidesToShow: 1.11,
+            //   dots: true,
+            //   infinite: false
+            // }
       
-          }, 
-        //   {
+          // }, 
+          // {
       
-        //     breakpoint: 600,
-        //     settings: {
-        //       slidesToShow: 2,
-        //       dots: true
-        //     }
+          //   breakpoint: 320,
+          //   settings: {
+          //     settings: "slick",
+          //     slidesToShow: 2,
+          //     dots: true
+          //   }
       
-        //   }, 
+          // }, 
           
-        //   {
+          // {
       
-        //     breakpoint: 769,
-        //     settings: "unslick" // destroys slick
+          //   breakpoint: 760,
+          //   settings: "unslick" // destroys slick
       
-        //   }
+          // }
         ]
       });
 })
