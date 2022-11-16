@@ -1,3 +1,5 @@
+@import './variables.scss';
+
 .services {
   padding: 42px 22px 21px 32px;
   position: relative;
@@ -20,7 +22,7 @@
     font-size: 14px;
     line-height: 20px;
     letter-spacing: 0.2px;
-    color: #1B1C21;
+    color: $textDark;
     display: flex;
     flex-direction: column;
   }
@@ -64,8 +66,8 @@
     padding: 16px;
     width: 240px;
     height: 72px;
-    background: #FFFFFF;
-    border: 1px solid #EAEAEA;
+    background: $bgLight;
+    border: 1px solid $buttonBorderSecondary;
     border-radius: 6px;
   }
 
@@ -77,7 +79,7 @@
     //  min-width: none;
     // max-height: 45px;   
      width: 128px;
-     background-color: #FFFFFF;
+     background-color: $bgLight;
      border: none;
      background-position: left;
      background-repeat: no-repeat;
@@ -129,7 +131,7 @@
     border-radius: 50%;
     background-image: url(../img/services/go.svg);
     border: none;
-    background-color: #FFFFFF;
+    background-color: $bgLight;
     cursor: pointer;
 
     &:hover {
@@ -154,7 +156,7 @@
     letter-spacing: -0.2px;
     text-transform: uppercase;
     color: #7E7E82;
-    background: linear-gradient(90deg, #F8F8F8 0%, #FFFFFF 98.61%);
+    background: linear-gradient(90deg, $bgSecondary 0%, $bgLight 98.61%);
     border-top: #D9FFF5 1px solid;
   }
 }
@@ -224,7 +226,7 @@
     line-height: 24px;
     letter-spacing: -0.2px;
     background-color: inherit;
-    border: 2px solid #F8F8F8;
+    border: 2px solid $bgSecondary;
     cursor: pointer;
 
     &:hover {
@@ -236,7 +238,7 @@
     color: #7E7E82;
 
     &_active {
-      background: #FFFFFF;
+      background: $bgLight;
       border: 2px solid #B8FFEC;
       border-radius: 6px;
     }
@@ -256,6 +258,10 @@
 .slick-dots li.slick-active button:before {
   color: #B5B6BC;
   opacity: 1;
+}
+
+.slider .services__brands-logo-link {
+  margin-right: 16px;
 }
 
 
@@ -315,6 +321,10 @@
     }
   }
 }
+
+// .slider {
+//   overflow-x: hidden;
+// }
 
 
 @media (min-width: 768px) and (max-width: 1439.99px) {

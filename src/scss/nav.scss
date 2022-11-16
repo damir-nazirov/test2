@@ -1,6 +1,5 @@
-$bgMenuIcon: #FF3E79;
-$activeLink: #7E7E82;
-$menuText: #1B1C21;
+
+@import './variables.scss';
 
 @font-face {
   font-family: 'Comic';
@@ -15,8 +14,9 @@ $menuText: #1B1C21;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  box-shadow: 16px 0 52px rgba(14, 24, 80, 0.2);
+  box-shadow: 16px 0 52px $navShadow;
   z-index: 10;
+  background: $bgLight;
 
 
   &__contacts {
@@ -63,14 +63,14 @@ $menuText: #1B1C21;
 
   &__link {
     text-decoration: none;
-    color: $menuText;
+    color: $textDark;
     font-size: 16px;
     line-height: 24px;
     letter-spacing: -0.2px;
     position: relative;
 
     &:hover {
-      color: $activeLink;
+      color: $textSecondary;
       transition: 0.2s;
 
       &:before {
@@ -78,7 +78,7 @@ $menuText: #1B1C21;
         display: block;
         width: 8px;
         height: 32px;
-        background-color: #41F6D7;
+        background-color: $navAsideActiveElement;
         position: absolute;
         bottom: -6px;
         left: -28px;
@@ -157,7 +157,7 @@ $menuText: #1B1C21;
 .button {
   width: 40px;
   height: 40px;
-  background-color: $bgMenuIcon;
+  background-color: $bgButtons;
   border-radius: 50%;
   border: none;
   cursor: pointer;
@@ -204,22 +204,22 @@ $menuText: #1B1C21;
   text-transform: uppercase;
   padding-right: 7px;
   text-decoration: none;
-  color: $menuText;
+  color: $textDark;
 
   &_active {
-    color: $activeLink;
+    color: $textSecondary;
   }
 }
 
 .email {
   text-decoration: none;
-  color: $menuText;
+  color: $textDark;
   font-size: 16px;
 }
 
 .phone {
   text-decoration: none;
-  color: $menuText;
+  color: $textDark;
   font-size: 24px;
 }
 

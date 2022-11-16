@@ -3,7 +3,10 @@ $(document).ready(function(){
 
         // normal options...
         infinite: false,
-        slidesToShow: 1.11,
+        // slidesToShow: 1.11,
+        // slidesToShow: 5,
+        variableWidth: true,
+
         dots: true,
 
       
