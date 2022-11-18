@@ -17,30 +17,24 @@
   box-shadow: 16px 0 52px $navShadow;
   z-index: 10;
   background: $bgLight;
-
-
   &__contacts {
     height: 120px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
   }
-
   &__content-wrapper {
     display: flex;
     justify-content: space-between;
     align-items: center;
-
     &_size {
       &_l {
         width: 162px;
       }
-
       &_m {
         width: 152px;
       }
     }
-
     &_flex {
       &_column {
         flex-direction: column;
@@ -50,17 +44,14 @@
       }
     }
   }
-
   &__list {
     list-style-type: none;
     padding: 0;
     margin-top: 40px;
   }
-
   &__item {
     margin-bottom: 28px;
   }
-
   &__link {
     text-decoration: none;
     color: $textDark;
@@ -68,11 +59,9 @@
     line-height: 24px;
     letter-spacing: -0.2px;
     position: relative;
-
     &:hover {
       color: $textSecondary;
       transition: 0.2s;
-
       &:before {
         content: '';
         display: block;
@@ -90,13 +79,10 @@
 
 @media (max-width: 767.99px) {
 
-  //телефоны
   .main-nav {
-    // display: none;
     display: flex;
     min-width: 360px;
     min-width: 360px;
-
     &__content-wrapper_flex_column {
       height: 153px;
     }
@@ -170,7 +156,7 @@
 
   &:hover {
     transform: translate(0, -3px);
-    box-shadow: 0 5px 5px gray;
+    box-shadow: 0 5px 5px $navButtonsHoverShadow;
     transition: 0.2s;
   }
 
