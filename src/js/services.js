@@ -18,15 +18,25 @@ const showHideMoreDescrText = () => {
 
 ///////////////////////////////////////////////////////////////////////
 
-const hideBrends = document.querySelectorAll('.services__brands-logo-wrapper .hide')
+const hideBrends = document.querySelector('.services__brands-logo-wrapper')
 const showMoreBrends = document.querySelector('.services__brands-logo .show-hide-button_show');
 const hideMoreBrends = document.querySelector('.services__brands-logo .show-hide-button_hide');
 
+// const showHideMoreBrends = () => {
+//   hideBrends.forEach(element => toggleClass(element, 'hide'));
+//   toggleClass(showMoreBrends, 'hide');
+//   toggleClass(hideMoreBrends, 'hide');
+// }
+
+console.log(hideBrends);
+
+
 const showHideMoreBrends = () => {
-  hideBrends.forEach(element => toggleClass(element, 'hide'));
+  toggleClass(hideBrends, 'services__brands-logo-wrapper_height_unlimited')
   toggleClass(showMoreBrends, 'hide');
   toggleClass(hideMoreBrends, 'hide');
 }
+
 
 showMoreBrends.addEventListener('click', showHideMoreBrends)
 hideMoreBrends.addEventListener('click', showHideMoreBrends)

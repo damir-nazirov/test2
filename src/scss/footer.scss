@@ -1,11 +1,9 @@
 .footer {
     display: flex;
     justify-content: space-between;
-    // flex-basis: 100%;
     align-items: center;
     border-top: $servicesSectionTopBorder 1px solid;
     width: 100%;
-    // height: 85px;
     z-index: 250;
     position: relative;
     bottom: 0;
@@ -19,24 +17,17 @@
     mix-blend-mode: normal;
     opacity: 0.72;
     &__develop{
-        // display: flex;
-        // flex-direction: column;
         text-align: start;
-        // flex-shrink: 1;
         width: 33%;
     }
     &__conf-politic {
-        // flex-shrink: 1;
         text-decoration: none;
         color: $textSecondary;
-        // padding: 0 35px;
         width: 33%;
     }
     &__info {
         display: flex;
         padding-left: 6%;
-        // flex-shrink: 1;
-        // flex-direction: column;
         text-align: end;
         width: 33%;
     }
@@ -54,7 +45,6 @@
 
 @media (max-width: 767.99px) {
     .footer {
-    //   height: 128px;
       padding: 16px 0 19px 0;
       flex-direction: column;
       justify-content: space-around;
@@ -63,11 +53,7 @@
         margin-bottom: 16px;
       }
       &__conf-politic {
-        // flex-shrink: 1;
         text-decoration: none;
-        // color: $textSecondary;
-        // padding-top: 16px;
-        // padding: 0 35px;
         width: 33%;
     }
       &__info {
